@@ -17,7 +17,9 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Build project
-        run: npm run build
+        run: |
+          npm run build
+          echo > ./dist/.nojekyll
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
