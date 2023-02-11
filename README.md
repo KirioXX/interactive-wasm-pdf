@@ -1,13 +1,14 @@
 # Interactive WASM Pdf
 
-Test your [wasm-pdf template](https://github.com/jussiniinikoski/wasm-pdf) in this interactive example.
+Test your [wasm-pdf template](https://github.com/jussiniinikoski/wasm-pdf) in this interactive example.</br>
+Try it here: https://kirioxx.github.io/interactive-wasm-pdf/
 
 It combines [wasm-pdf](https://github.com/jussiniinikoski/wasm-pdf) and [json-template](https://github.com/datavis-tech/json-templates) to generate PDFs in the browser.
 
 <details>
-  <summary>To get started you can use this example JSON:</summary>
+  <summary>To get started you can use the following example JSON</summary>
 
-    ```json
+```json
     {
     "title": "Example Document",
     "template": {
@@ -372,5 +373,5 @@ It combines [wasm-pdf](https://github.com/jussiniinikoski/wasm-pdf) and [json-te
         }
     ]
     }
-    ```
+```
 </details>
