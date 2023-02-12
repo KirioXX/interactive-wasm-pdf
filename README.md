@@ -1,9 +1,11 @@
 # Interactive WASM Pdf
 
-Test your [wasm-pdf template](https://github.com/jussiniinikoski/wasm-pdf) in this interactive example.</br>
+Test your wasm-pdf template in a interactive playground.</br>
 Try it here: https://kirioxx.github.io/interactive-wasm-pdf/
 
-It combines [wasm-pdf](https://github.com/jussiniinikoski/wasm-pdf) and [json-template](https://github.com/datavis-tech/json-templates) to generate PDFs in the browser.
+It combines [wasm-pdf](https://github.com/jussiniinikoski/wasm-pdf) </br>
+and [json-template](https://github.com/datavis-tech/json-templates) </br>
+to generate PDFs in the browser.
 
 <details>
   <summary>To get started you can use the following example JSON</summary>

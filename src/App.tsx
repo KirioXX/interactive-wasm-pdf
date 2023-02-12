@@ -11,13 +11,15 @@ function App() {
   const [data, setData] = useState<{[key: string]: any}>({})
 
   const handleTemplateChange = (e: any) => {
-    let inputValue = e.target.value
-    setTemplate(inputValue)
-    const jsonTemplate = parse(template);
-    setData(jsonTemplate.parameters.reduce((prev: any, curr) => {
+    const inputValue = e.target.value
+    const jsonTemplate = parse(inputValue);
+    const newData = jsonTemplate.parameters.reduce((prev: any, curr) => {
       prev[curr.key] = curr.defaultValue ?? ''
       return prev
-    }, {}))
+    }, {});
+    // Set states
+    setTemplate(inputValue)
+    setData(newData)
   }
 
   const handleValueChange = (key: string, value: string) => {
@@ -47,7 +49,7 @@ function App() {
         <Text>JSON Template:</Text>
         <Textarea
           value={template}
-          onChange={handleTemplateChange}
+          onInput={handleTemplateChange}
           placeholder='Add you json template'
           size="lg"
           minH="300px"
